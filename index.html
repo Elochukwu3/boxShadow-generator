@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow geneartor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrappper">
+        <h1>Box-shadow Generator</h1>
+        <div class="box-generator-container">
+            <div class="operating-side">
+                <div class="group">
+                    <h2>X Offset</h2>
+                    <input type="range"
+                    min="-50"
+                    max="50"
+                    step="1"
+                    value="0"
+                    class="controls"
+                    id="x-offset"
+                    >
+                </div>
+                <div class="group">
+                    <h2>Y Ofset</h2>
+                    <input type="range"
+                        class="controls"
+                        min="-50"
+                        max="50"
+                        step="1"
+                        id="y-value"
+                        value="0"
+                    >
+                </div>
+                <div class="group">
+                    <h2>Blur Radius</h2>
+                    <input type="range"
+                        class="controls"
+                        min="0"
+                        max="50"
+                        step="1"
+                        id="blur"
+                        value="6"
+                    >
+                </div>
+                <div class="group">
+                    <h2>spread Radius</h2>
+                    <input type="range"
+                        class="controls"
+                        min="-50"
+                        max="50"
+                        step="1"
+                        id="spread"
+                        value="0"
+                    >
+                </div>
+                <div class="group">
+                    <h2>Opacity</h2>
+                    <input type="range"
+                        class="controls"
+                        min="0"
+                        max="1"
+                        step="0.1"
+                        id="opacity"
+                        value="0.3"
+                    >
+                </div>
+                <div class="color-inset">
+                    <div class="color">
+                        <h2>color</h2>
+                        <input type="color"
+                        class="controls"
+                        id="color">
+                    </div>
+                    <div class="inset">
+                        <h2>Inset</h2>
+                        <input type="checkbox"
+                        class="controls"
+                        id="mark">
+                    </div>
+                </div>
+            </div>
+            <!-- second layer (to flex right) -->
+            <div class="result-layer">
+                <div class="result-box">
+                   
+                </div>
+                <div class="code">
+                    
+                    <code></code>
+                        
+                </div>
+                <div>
+                    <div class="btn-container">
+                        <button class="generating-btn">
+                            Generate Code
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
